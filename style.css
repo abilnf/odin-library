@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  background-color: #111;
+}
+
+.books {
+  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-content: flex-start;
+  gap: 32px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  min-height: 200px;
+  background-color: rgb(223, 223, 223);
+  box-shadow: 0 0 5px white;
+  border-radius: 8px;
+  padding: 8px;
+  transition: transform 200ms ease-in-out;
+}
+
+.book:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px pink;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.remove {
+  background-color: darkred;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.changeRead {
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  border: 2px solid green;
+  background-color: rgb(134, 247, 134);
+}
+
+.changeRead--unread {
+  border: 2px solid blue;
+  background-color: rgb(147, 167, 253);
+}
+
+.title {
+  font-weight: bold;
+  font-size: large;
+}
+
+p {
+  margin: 8px;
+}
+
+#addBook {
+  align-self: center;
+  margin-top: 16px;
+  background-color: green;
+  border: 0;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: large;
+  font-weight: bold;
+}
